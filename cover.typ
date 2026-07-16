@@ -8,11 +8,11 @@
   ]
   #v(1em)
   #text(size: 44pt, weight: "bold", fill: rgb("#111827"))[
-    计算机软硬件演化编年史
+    计算机系统演化
   ]
   #v(0.5em)
   #text(size: 18pt, fill: rgb("#4b5563"))[
-    追溯微架构、操作系统、编译器与异构计算的协同演进
+    微架构、操作系统、编译器与异构计算如何共同塑造现代计算
   ]
   #v(2em)
   #line(length: 20%, stroke: 2pt + rgb("#e5e7eb"))
