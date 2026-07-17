@@ -33,10 +33,18 @@
 )
 
 #set par(
+  first-line-indent: (amount: 2em, all: true),
   justify: true,
   leading: 0.8em,
   spacing: 1.5em,
 )
+
+#set list(indent: 2em)
+#set enum(indent: 2em)
+
+#show list: set par(first-line-indent: 0pt)
+#show enum: set par(first-line-indent: 0pt)
+
 #show heading: it => {
   let color = if it.level == 1 { rgb("#111827") } else { rgb("#374151") }
   let size = (1.8em, 1.4em, 1.15em, 1em).at(it.level - 1, default: 1em)

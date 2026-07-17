@@ -1,3 +1,5 @@
+#set par(first-line-indent: (amount: 0em, all: true),)
+
 #align(center + horizon)[
   #block(width: 65%, align(left)[
     #text(size: 15pt, weight: "bold", fill: rgb("#111827"))[

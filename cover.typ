@@ -1,3 +1,5 @@
+#set par(first-line-indent: (amount: 0em, all: true),)
+
 #place(top + left, dx: -3cm, dy: -3.5cm)[
   #rect(width: 210mm, height: 12pt, fill: rgb("#1d4ed8"))
 ]

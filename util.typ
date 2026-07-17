@@ -11,6 +11,7 @@
     margin: (x: 3.2cm, y: 4.5cm),
   )[
     #set text(font: font, lang: "zh")
+    #set par(first-line-indent: (amount: 0em, all: true),)
     
     #align(horizon)[
       #block(width: 100%)[
