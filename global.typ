@@ -3,26 +3,20 @@
   margin: (x: 3cm, y: 3.5cm),
   
   header: context {
-    let page-num = counter(page).get().first()
-    if page-num > 2 {
-      let elems = query(heading.where(level: 1))
-      if elems.len() > 0 {
-        let current-chapter = elems.last().body
-        grid(align(left)[#text(size: 9pt, fill: rgb("#888888"))[计算机软硬件演化编年史]])
-        v(-0.4em)
-        line(length: 100%, stroke: 0.5pt + rgb("#e5e7eb"))
-      }
+    let elems = query(heading.where(level: 1))
+    if elems.len() > 0 {
+      let current-chapter = elems.last().body
+      grid(align(left)[#text(size: 9pt, fill: rgb("#888888"))[计算机系统演化]])
+      v(-0.4em)
+      line(length: 100%, stroke: 0.5pt + rgb("#e5e7eb"))
     }
   },
   
   footer: context {
     let page-num = counter(page).get().first()
-    if page-num > 2 {
-      let display-num = page-num - 2
-      align(center)[
-        #text(size: 9pt, fill: rgb("#9ca3af"))[#display-num]
-      ]
-    }
+    align(center)[
+      #text(size: 9pt, fill: rgb("#9ca3af"))[#page-num]
+    ]
   },
 )
 

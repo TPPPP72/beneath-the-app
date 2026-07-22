@@ -66,6 +66,12 @@ def build():
         content_lines.append("#pagebreak()\n")
         print("📝 已添加引言")
 
+    content_lines.append("#page(header: none, footer: none)[#outline(title: [目录], depth: 2)]\n")
+    print("📝 已添加目录")
+
+    content_lines.append("#counter(page).update(1)\n")
+    print("📝 已重置页码")
+
     chapter_files = scan_and_sort_chapters(CHAPTERS_DIR)
     if not chapter_files:
         print("⚠️ 未发现任何章节 .typ 文件")

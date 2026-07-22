@@ -72,5 +72,7 @@
         ]
       ]
     ]
+    #show heading.where(level: 1): none
+    #heading(level: 1, outlined: true)[#chapter-num #chapter-title]
   ]
 }
